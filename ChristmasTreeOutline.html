@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <title>Christmas Tree Outline</title>
+    <style>
+        .tree{
+            position: relative;
+            width: 500px;
+        }
+        .body {
+            width: 800px;
+            position: relative;
+            height: 500px;
+        }
+        
+        .left {
+            position: absolute;
+            top: 0;
+            left: 36.7%;
+        }
+        
+        .right {
+            transform: rotateY(-200deg);
+            top: 0;
+            position: absolute;
+            right: 38%;
+        }
+        
+        .curvededge {
+            height: 75px;
+            width: 100px;
+            border-radius: 100% 0%;
+            background: transparent;
+            stroke-width: 5px;
+            /* border-right: 1px solid red; */
+            border-bottom: 1px solid green;
+            position: relative;
+        }
+        
+        .curvededge:after {
+            position: absolute;
+            height: 25px;
+            width: 70px;
+            border-radius: 10% 100%;
+            border-bottom: 1px solid green;
+            content: '';
+            left: 0;
+            top: 73px;
+        }
+        
+        .curvededge1 {
+            height: 150px;
+            width: 200px;
+            left: -130px;
+            top: 20px;
+        }
+        
+        .curvededge1:after {
+            height: 50px;
+            width: 140px;
+            top: 146px;
+        }
+        
+        .curvededge2 {
+            height: 180px;
+            width: 300px;
+            left: -290px;
+            top: 58px;
+        }
+        
+        .curvededge2:after {
+            height: 75px;
+            width: 390px;
+            top: 140px;
+            border-radius: 50%;
+        }
+        .trunk{
+            position: relative;
+            left: 75.4%;
+            margin-top: -40px;
+        width: 30px;
+        border: 1px solid brown;
+        height: 120px;    
+        }
+    </style>
+</head>
+
+<body>
+    <!--Christmas Tree Start-->
+    <div class="tree">
+    <div class="body">
+        <div class="left">
+            <div class="curvededge"></div>
+            <div class="curvededge curvededge1"></div>
+            <div class="curvededge curvededge2"></div>
+        </div>
+        <div class="right">
+            <div class="curvededge"></div>
+            <div class="curvededge curvededge1"></div>
+            <div class="curvededge curvededge2"></div>
+        </div>
+    </div>
+            <div class="trunk"></div>
+            </div>
+    <!--Christmas Tree End--> 
+</body>
+</html>
